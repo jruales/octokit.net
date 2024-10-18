@@ -60,7 +60,7 @@ var app = await appClient.GitHubApps.GetCurrent();
 var installations = await appClient.GitHubApps.GetAllInstallationsForCurrent();
 
 // Get a specific installation of the authenticated GitHubApp by it's installation Id
-var installation = await appClient.GitHubApps.GetInstallation(123);
+var installation = await appClient.GitHubApps.GetInstallationForCurrent(123);
 
 ```
 
